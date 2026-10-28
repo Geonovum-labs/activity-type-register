@@ -1,10 +1,11 @@
 # A short, descriptive name of this building block collection
-name: My OGC Building Blocks repository
+name: Activity Type Register
 
 # Short abstract for this collection (optional)
 abstract: |
-  This is an example text for the abstract. It should be short and to the point.
-  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+  A general-purpose, engine- and format-agnostic vocabulary of Generic Profiles, 
+  independent of any one project. 
+  A Generic Profile gives one or more related operations an abstract I/O signature (named roles and abstract types, no format, no size limit)
 
 # Description for this collection (optional)
 description: |
@@ -12,7 +13,7 @@ description: |
   including [links](https://google.es).
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.bbr.template.
+identifier-prefix: ogc.register.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register).
 # An entry can also be an "@org/register" alias (e.g. "@ogc/main", equivalent to "default"),
@@ -20,6 +21,7 @@ identifier-prefix: ogc.bbr.template.
 # a full register.json URL.
 imports:
   - default
+  - https://geonovum-labs.github.io/registered-item-model/build/register.json
 
 # Meta-registry used to resolve "@org/register" import aliases above (optional).
 # Defaults to the postprocessor's built-in meta-registry if omitted; set to null to disable
