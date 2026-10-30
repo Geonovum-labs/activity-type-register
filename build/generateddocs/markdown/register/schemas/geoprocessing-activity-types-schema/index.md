@@ -3,7 +3,7 @@
 
 `ogc.register.schemas.geoprocessing-activity-types-schema` *v0.3*
 
-A profile of the Activity Type Register Profile for geoprocessing activity types: registered sub-classes of geoproc:GeoprocessingActivityType, each required to use or generate at least one GeoSPARQL spatial data type.
+This is a schema representation of the ogc.register.geoprocessing-activity-types model
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
@@ -90,24 +90,11 @@ description: 'A profile of the Activity Type Register Profile for geoprocessing 
   '
 allOf:
 - $ref: https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/activity-types-schema/schema.yaml
-x-jsonld-extra-terms:
-  id: '@id'
-  type: '@type'
-  title: http://purl.org/dc/terms/title
-  description: http://purl.org/dc/terms/description
-  version: http://www.w3.org/2002/07/owl#versionInfo
-  usedEntityType:
-    x-jsonld-id: http://www.opengis.net/ont/geosparql#SpatialObject
-    x-jsonld-type: '@id'
-  generatedEntityType:
-    x-jsonld-id: https://w3id.org/ogc/rim/activity-type/generatedEntityType
-    x-jsonld-type: '@id'
-x-jsonld-prefixes:
-  dct: http://purl.org/dc/terms/
-  owl: http://www.w3.org/2002/07/owl#
-  geo: http://www.opengis.net/ont/geosparql#
-  acttype: https://w3id.org/ogc/rim/activity-type/
-  rim: https://w3id.org/ogc/rim#
+- type: object
+  properties:
+    usedEntityType:
+      description: URI identifying a class of spatial objects used as input by activities
+        of this type.
 x-bblocks-metadata:
   itemIdentifier: ogc.register.schemas.geoprocessing-activity-types-schema
   register: https://geonovum-labs.github.io/activity-type-register/build/register.json
@@ -322,7 +309,6 @@ Links to the schema:
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "acttype": "rim:activity-type/",
-    "geo": "http://www.opengis.net/ont/geosparql#",
     "@version": 1.1
   }
 }

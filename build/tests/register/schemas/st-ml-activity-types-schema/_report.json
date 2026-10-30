@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.register.schemas.st-ml-activity-types-schema - SpatioTemporal ML Activity Types Profile Schema",
   "bblockName": "SpatioTemporal ML Activity Types Profile Schema",
   "bblockId": "ogc.register.schemas.st-ml-activity-types-schema",
-  "generated": "2026-10-30T09:59:49.543457+00:00",
+  "generated": "2026-10-30T10:34:04.036165+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},

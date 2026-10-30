@@ -3,7 +3,7 @@
 
 `ogc.register.schemas.activity-types-schema` *v0.3*
 
-A profile of the Registered Item Model for governed activity type records in the acttype:ActivityType hierarchy, with related PROV object types and an optional plan.
+This is a schema representation of the ogc.register.activity-types model
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

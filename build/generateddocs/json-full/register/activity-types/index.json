@@ -5,7 +5,7 @@
   "name": "Activity Types Register Profile",
   "group": "Example: Activity Types",
   "highlighted": true,
-  "title": "Registers of activity types, profiled from the Registered Item Model",
+  "title": "Model of activity types, profiled from the Registered Item Model",
   "abstract": "A profile of the Registered Item Model for governed activity type records in the acttype:ActivityType hierarchy, with related PROV object types and an optional plan.",
   "description": "An activity type register governs activity types with identifiers, statuses and change history. Specific activity type classes specialise acttype:ActivityType, a sub-class of rim:RegisterItem. Registered types may be classes used to type individual activity records; those records also inherit register item requirements. Every activity type record uses acttype:activityTypeItemClass and belongs to the acttype:ActivityType hierarchy through rdf:type. Related entity, agent and activity types and an optional prov:Plan describe the expected activity. Further profiles specialise the root and constrain these related types.",
   "status": "under-development",

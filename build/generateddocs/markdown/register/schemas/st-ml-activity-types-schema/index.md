@@ -3,7 +3,7 @@
 
 `ogc.register.schemas.st-ml-activity-types-schema` *v0.3*
 
-A profile of the SpatioTemporal Machine learning Activity Types Profile describing spatiotemporal machine learning training and inference runs, and registrable ML activity types, using the STAC MLM extension's task, framework/accelerator and input/output vocabulary.
+This is a schema representation of the ogc.register.st-ml-activity-types model
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
@@ -232,7 +232,6 @@ Links to the schema:
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "acttype": "rim:activity-type/",
-    "geo": "http://www.opengis.net/ont/geosparql#",
     "@version": 1.1
   }
 }

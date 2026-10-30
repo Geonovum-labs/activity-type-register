@@ -19,15 +19,15 @@
         bblocks:BBlock,
         bblocks:Schema ;
     rdfs:label "SpatioTemporal ML Activity Types Profile Schema" ;
-    dct:abstract "A profile of the SpatioTemporal Machine learning Activity Types Profile describing spatiotemporal machine learning training and inference runs, and registrable ML activity types, using the STAC MLM extension's task, framework/accelerator and input/output vocabulary."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:abstract "This is a schema representation of the ogc.register.st-ml-activity-types model"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-17T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/markdown/register/schemas/st-ml-activity-types-schema/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/json-full/register/schemas/st-ml-activity-types-schema/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/bblock/ogc.register.schemas.st-ml-activity-types-schema> ],
-        "The STAC Machine Learning Model (MLM) extension describes a model as a static artifact — a STAC Item or Collection with declared inputs, outputs and requirements — but has no notion of a particular run of that model. This block adds that: mlact:MLActivityType (with mlact:TrainingActivityType and mlact:InferenceActivityType sub-types) is a geoproc:GeoprocessingActivityType recording one execution, and so can be specialised into ML activity types held in an activity type register. It is also a rim:RegisterAction. In this ecosystem, running a model is itself a governed act — typically the one that adds a derived product to a register as a new rim:RegisterItem — so the run belongs in the same audit trail as any other register action. The activity's task, framework and accelerator are drawn from the MLM extension's own SKOS schemes rather than redefined, and its recorded inputs/outputs (mlact:ActivityInput / mlact:ActivityOutput, both prov:Entity) each declare via dct:conformsTo which of the model's own declared mlm:ModelInput/mlm:ModelOutput specifications they realise. Registered ML activity types must declare at least one mlact:ActivityInput sub-type as a used entity type, and registered inference types at least one mlact:ActivityOutput sub-type as a generated entity type."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/json-full/register/schemas/st-ml-activity-types-schema/index.json> ],
+        "See the ogc.register.st-ml-activity-types model for the description of the SpatioTemporal ML Activity Types Profile. This building block is a Schema representation of that block for json schema implementation purposes."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.3" ;
     dct:modified "2026-10-30"^^xsd:date ;
     dct:source <https://github.com/ogcincubator/bblocks-stac/tree/master/_sources/extensions/mlm-ontology>,
@@ -42,37 +42,14 @@
         "machine learning",
         "provenance",
         "register" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.register.st-ml-activity-types> ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/st-ml-activity-types/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/st-ml-activity-types-schema/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
-            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/st-ml-activity-types-schema/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/st-ml-activity-types-schema/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.register.geoprocessing-activity-types> ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.mlm-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
@@ -81,9 +58,32 @@
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.mlm-ontology> ;
-            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/st-ml-activity-types-schema/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.register.geoprocessing-activity-types> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.register.st-ml-activity-types> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/st-ml-activity-types/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/st-ml-activity-types-schema/schema.json> ;
+            prof:hasRole role:schema ] ;
     prof:isProfileOf <bblocks://ogc.register.schemas.geoprocessing-activity-types-schema> ;
     bblocks:dependsOn <bblocks://ogc.register.schemas.geoprocessing-activity-types-schema>,
         <bblocks://ogc.register.st-ml-activity-types> ;
@@ -92,18 +92,18 @@
 
 <https://geonovum-labs.github.io/activity-type-register/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Ne9f13590054641aea83ac87d37bb3489 ;
+    prov:wasAttributedTo _:N0eddef8d858340d2855de717e25ae47a ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-10-30T09:59:49.758528"^^xsd:dateTime ;
-            prov:startedAtTime "2026-10-30T09:59:49.559073"^^xsd:dateTime ;
+            prov:endedAtTime "2026-10-30T10:34:04.235427"^^xsd:dateTime ;
+            prov:startedAtTime "2026-10-30T10:34:04.052276"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:42a66c63d9f98279535fc2a585980be434c10ff5" ;
+                    dct:hasVersion "git:c6b422df11f84404b353ff563fb16c47d0e7900c" ;
                     rdfs:seeAlso <https://geonovum-labs.github.io/activity-type-register/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:Ne9f13590054641aea83ac87d37bb3489 ] .
+            prov:wasAssociatedWith _:N0eddef8d858340d2855de717e25ae47a ] .
 
 <https://docs.ogc.org/is/22-047r1/22-047r1.html> rdfs:label "OGC GeoSPARQL 1.1" .
 
@@ -118,15 +118,15 @@
         bblocks:BBlock,
         bblocks:Schema ;
     rdfs:label "Activity Types Register Profile Schema" ;
-    dct:abstract "A profile of the Registered Item Model for governed activity type records in the acttype:ActivityType hierarchy, with related PROV object types and an optional plan."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:abstract "This is a schema representation of the ogc.register.activity-types model"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-10-30T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/json-full/register/schemas/activity-types-schema/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/markdown/register/schemas/activity-types-schema/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/bblock/ogc.register.schemas.activity-types-schema> ],
-        "An activity type register governs activity types with identifiers, statuses and change history. Specific activity type classes specialise acttype:ActivityType, a sub-class of rim:RegisterItem. Registered types may be classes used to type individual activity records; those records also inherit register item requirements. Every activity type record uses acttype:activityTypeItemClass and belongs to the acttype:ActivityType hierarchy through rdf:type. Related entity, agent and activity types and an optional prov:Plan describe the expected activity. Further profiles specialise the root and constrain these related types."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/json-full/register/schemas/activity-types-schema/index.json> ],
+        "See the ogc.register.activity-types model for the description of the Activity Types Register Profile. This building block is a Schema representation of that block for json schema implementation purposes."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.3" ;
     dct:modified "2026-10-30"^^xsd:date ;
     dct:source <https://www.opmw.org/model/p-plan/>,
@@ -142,11 +142,6 @@
         "schema" ;
     prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
-            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.register.activity-types> ;
             prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/activity-types/shapes.shacl> ;
             prof:hasRole role:validation ],
@@ -156,17 +151,22 @@
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/activity-types-schema/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/activity-types-schema/context.jsonld> ;
             prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/activity-types-schema/schema.json> ;
-            prof:hasRole role:schema ] ;
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
     prof:isProfileOf <bblocks://ogc.rim.schemas.register-item> ;
     bblocks:dependsOn <bblocks://ogc.register.activity-types>,
         <bblocks://ogc.rim.schemas.register-item>,
@@ -180,15 +180,15 @@
         bblocks:BBlock,
         bblocks:Schema ;
     rdfs:label "Geoprocessing Activity Types Profile Schema" ;
-    dct:abstract "A profile of the Activity Type Register Profile for geoprocessing activity types: registered sub-classes of geoproc:GeoprocessingActivityType, each required to use or generate at least one GeoSPARQL spatial data type."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:abstract "This is a schema representation of the ogc.register.geoprocessing-activity-types model"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/markdown/register/schemas/geoprocessing-activity-types-schema/index.md> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/json-full/register/schemas/geoprocessing-activity-types-schema/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/bblock/ogc.register.schemas.geoprocessing-activity-types-schema> ],
-        "Geoprocessing activities (reprojection, clipping, index computation, classification, model inference over imagery) are distinguished from other activities by the kind of data they use and produce. This block adds geoproc:GeoprocessingActivityType, a sub-class of acttype:ActivityType that every registered geoprocessing activity type specialises. It also constrains the related PROV object types such a type declares: at least one acttype:usedEntityType or acttype:generatedEntityType must be a GeoSPARQL 1.1 spatial type (geo:SpatialObject or geo:SpatialObjectCollection, or a sub-class of either). Further profiles, such as the ML Activity Types Profile, specialise geoproc:GeoprocessingActivityType in turn and add their own constraints."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/markdown/register/schemas/geoprocessing-activity-types-schema/index.md> ],
+        "See the ogc.register.geoprocessing-activity-types model for the description of the Geoprocessing Activity Types Profile. This building block is a Schema representation of that block for json schema implementation purposes."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.3" ;
     dct:modified "2026-10-30"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/22-047r1/22-047r1.html>,
@@ -201,14 +201,10 @@
         "geoprocessing",
         "provenance",
         "register" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/geoprocessing-activity-types-schema/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
-            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.register.activity-types> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/activity-types/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
@@ -224,19 +220,22 @@
             rdfs:seeAlso <bblocks://ogc.register.geoprocessing-activity-types> ;
             prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/geoprocessing-activity-types-schema/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/geoprocessing-activity-types-schema/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.register.activity-types> ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/activity-types/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
             prof:hasRole role:validation ] ;
     prof:isProfileOf <bblocks://ogc.register.schemas.activity-types-schema> ;
     bblocks:dependsOn <bblocks://ogc.register.geoprocessing-activity-types>,
         <bblocks://ogc.register.schemas.activity-types-schema> ;
-    bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/activity-type-register/_sources/schemas/geoprocessing-activity-types-schema/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
@@ -247,12 +246,12 @@
     rdfs:label "SpatioTemporal ML Activity Types Profile" ;
     dct:abstract "A profile of the SpatioTemporal Machine learning Activity Types Profile describing spatiotemporal machine learning training and inference runs, and registrable ML activity types, using the STAC MLM extension's task, framework/accelerator and input/output vocabulary."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/markdown/register/st-ml-activity-types/index.md> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/bblock/ogc.register.st-ml-activity-types> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/json-full/register/st-ml-activity-types/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/markdown/register/st-ml-activity-types/index.md> ],
         "The STAC Machine Learning Model (MLM) extension describes a model as a static artifact — a STAC Item or Collection with declared inputs, outputs and requirements — but has no notion of a particular run of that model. This block adds that: mlact:MLActivityType (with mlact:TrainingActivityType and mlact:InferenceActivityType sub-types) is a geoproc:GeoprocessingActivityType recording one execution, and so can be specialised into ML activity types held in an activity type register. It is also a rim:RegisterAction. In this ecosystem, running a model is itself a governed act — typically the one that adds a derived product to a register as a new rim:RegisterItem — so the run belongs in the same audit trail as any other register action. The activity's task, framework and accelerator are drawn from the MLM extension's own SKOS schemes rather than redefined, and its recorded inputs/outputs (mlact:ActivityInput / mlact:ActivityOutput, both prov:Entity) each declare via dct:conformsTo which of the model's own declared mlm:ModelInput/mlm:ModelOutput specifications they realise. Registered ML activity types must declare at least one mlact:ActivityInput sub-type as a used entity type, and registered inference types at least one mlact:ActivityOutput sub-type as a generated entity type."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.3" ;
     dct:modified "2026-10-30"^^xsd:date ;
@@ -275,23 +274,14 @@
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.register.st-ml-activity-types> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/st-ml-activity-types/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.register.activity-types> ;
             prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/activity-types/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
-            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/st-ml-activity-types/ontology.ttl> ;
-            prof:hasRole role:specification ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.register.geoprocessing-activity-types> ;
@@ -299,8 +289,17 @@
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.register.st-ml-activity-types> ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/st-ml-activity-types/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/st-ml-activity-types/ontology.ttl> ;
+            prof:hasRole role:specification ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
             prof:hasRole role:validation ] ;
     prof:isProfileOf <bblocks://ogc.register.geoprocessing-activity-types> ;
     bblocks:dependsOn <bblocks://ogc.contrib.stac.extensions.mlm-ontology> ;
@@ -318,10 +317,10 @@
     dct:created "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/json-full/register/geoprocessing-activity-types/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/bblock/ogc.register.geoprocessing-activity-types> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/markdown/register/geoprocessing-activity-types/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/bblock/ogc.register.geoprocessing-activity-types> ],
         "Geoprocessing activities (reprojection, clipping, index computation, classification, model inference over imagery) are distinguished from other activities by the kind of data they use and produce. This block adds geoproc:GeoprocessingActivityType, a sub-class of acttype:ActivityType that every registered geoprocessing activity type specialises. It also constrains the related PROV object types such a type declares: at least one acttype:usedEntityType or acttype:generatedEntityType must be a GeoSPARQL 1.1 spatial type (geo:SpatialObject or geo:SpatialObjectCollection, or a sub-class of either). Further profiles, such as the ML Activity Types Profile, specialise geoproc:GeoprocessingActivityType in turn and add their own constraints."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.3" ;
     dct:modified "2026-10-30"^^xsd:date ;
@@ -335,15 +334,15 @@
         "geoprocessing",
         "provenance",
         "register" ;
-    prof:hasResource [ dct:conformsTo owl:Ontology ;
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.register.geoprocessing-activity-types> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
             prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/ontology.ttl> ;
             prof:hasRole role:specification ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
-            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
-            prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.register.activity-types> ;
@@ -351,8 +350,8 @@
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.register.geoprocessing-activity-types> ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
@@ -371,12 +370,12 @@
     rdfs:label "Activity Types Register Profile" ;
     dct:abstract "A profile of the Registered Item Model for governed activity type records in the acttype:ActivityType hierarchy, with related PROV object types and an optional plan."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/bblock/ogc.register.activity-types> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/json-full/register/activity-types/index.json> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/markdown/register/activity-types/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/build/generateddocs/json-full/register/activity-types/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/activity-type-register/bblock/ogc.register.activity-types> ],
         "An activity type register governs activity types with identifiers, statuses and change history. Specific activity type classes specialise acttype:ActivityType, a sub-class of rim:RegisterItem. Registered types may be classes used to type individual activity records; those records also inherit register item requirements. Every activity type record uses acttype:activityTypeItemClass and belongs to the acttype:ActivityType hierarchy through rdf:type. Related entity, agent and activity types and an optional prov:Plan describe the expected activity. Further profiles specialise the root and constrain these related types."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.3" ;
     dct:modified "2026-10-30"^^xsd:date ;
@@ -392,23 +391,23 @@
         "register" ;
     prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
-            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/activity-types/ontology.ttl> ;
-            prof:hasRole role:specification ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.register.activity-types> ;
             prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/_sources/activity-types/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/activity-type-register/build/annotated/register/activity-types/ontology.ttl> ;
+            prof:hasRole role:specification ] ;
     prof:isProfileOf <bblocks://ogc.rim.core-ontology> ;
     bblocks:dependsOn <bblocks://ogc.model.cross-domain.prov> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -422,10 +421,10 @@
 independent of any one project. 
 A Generic Profile gives one or more related operations an abstract I/O signature (named roles and abstract types, no format, no size limit)
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:description """The description can be longer. Both **the abstract** *and the description* support Markdown,
-including [links](https://google.es).
+    dct:description """The profiles in this register are implemented as classes of the Registered Item Model, which lives in a separate [register](https://ogcincubator.github.io/registered-item-model/). 
+The intent for this register is to be the genereric 'top level' register that federated registers can inherit from for specific activity profiles in the respective domains.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-10-30T09:59:37.917408"^^xsd:dateTime ;
+    dct:modified "2026-10-30T10:33:51.772938"^^xsd:dateTime ;
     owl:imports <https://geonovum-labs.github.io/registered-item-model/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://ogc.register.activity-types>,
@@ -439,18 +438,18 @@ including [links](https://google.es).
             dct:type "text/turtle" ;
             ns2:relation <http://www.iana.org/assignments/relation/self> ;
             ns1:hasTarget <https://geonovum-labs.github.io/activity-type-register/build/bblocks.ttl> ],
-        [ rdfs:label "This Building Blocks Register in JSON format" ;
-            dct:type "application/json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://geonovum-labs.github.io/activity-type-register/build/register.json> ],
         [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;
             ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://geonovum-labs.github.io/activity-type-register/build/bblocks.jsonld> ] ;
+            ns1:hasTarget <https://geonovum-labs.github.io/activity-type-register/build/bblocks.jsonld> ],
+        [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://geonovum-labs.github.io/activity-type-register/build/register.json> ] ;
     foaf:homepage <https://geonovum-labs.github.io/activity-type-register/> ;
     bblocks:hasValidationReport <https://geonovum-labs.github.io/activity-type-register/build/tests/report.html> .
 
-_:Ne9f13590054641aea83ac87d37bb3489 a prov:Agent,
+_:N0eddef8d858340d2855de717e25ae47a a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.36" ;
