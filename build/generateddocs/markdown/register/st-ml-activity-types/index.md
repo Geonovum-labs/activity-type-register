@@ -154,7 +154,7 @@ x-bblocks-metadata:
   itemIdentifier: ogc.register.st-ml-activity-types
   register: https://geonovum-labs.github.io/activity-type-register/build/register.json
   version: '0.3'
-  dateOfLastChange: '2026-10-28'
+  dateOfLastChange: '2026-10-30'
 
 ```
 

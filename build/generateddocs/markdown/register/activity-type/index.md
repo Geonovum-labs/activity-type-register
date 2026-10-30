@@ -98,29 +98,48 @@ allOf:
       format: uri
       description: "A type of prov:Entity that activities of this type use (prov:used)
         \u2014 for example a type of input dataset."
+      x-jsonld-id: https://w3id.org/ogc/rim/activity-type/usedEntityType
+      x-jsonld-type: '@id'
     generatedEntityType:
       type: string
       format: uri
       description: "A type of prov:Entity that activities of this type generate (prov:generated)
         \u2014 for example a type of output product."
+      x-jsonld-id: https://w3id.org/ogc/rim/activity-type/generatedEntityType
+      x-jsonld-type: '@id'
     associatedAgentType:
       type: string
       format: uri
       description: A type of prov:Agent (for example prov:Person, prov:SoftwareAgent,
         or a narrower role-bearing type) that activities of this type are associated
         with (prov:wasAssociatedWith).
+      x-jsonld-id: https://w3id.org/ogc/rim/activity-type/associatedAgentType
+      x-jsonld-type: '@id'
     informedByActivityType:
       type: string
       format: uri
       description: "A type of acttype:ActivityType whose instances typically inform
         activities of this type (prov:wasInformedBy) \u2014 for example an upstream
         preparation activity type."
+      x-jsonld-id: https://w3id.org/ogc/rim/activity-type/informedByActivityType
+      x-jsonld-type: '@id'
   unevaluatedProperties: true
+x-jsonld-extra-terms:
+  id: '@id'
+  type: '@type'
+  title: http://purl.org/dc/terms/title
+  description: http://purl.org/dc/terms/description
+  version: http://www.w3.org/2002/07/owl#versionInfo
+x-jsonld-prefixes:
+  dct: http://purl.org/dc/terms/
+  owl: http://www.w3.org/2002/07/owl#
+  acttype: https://w3id.org/ogc/rim/activity-type/
+  rim: https://w3id.org/ogc/rim#
 x-bblocks-metadata:
   itemIdentifier: ogc.register.activity-type
   register: https://geonovum-labs.github.io/activity-type-register/build/register.json
   version: '0.3'
-  dateOfLastChange: '2026-10-28'
+  dateOfLastChange: '2026-10-30'
 
 ```
 
@@ -306,12 +325,30 @@ Links to the schema:
       "@id": "rim:hasAction",
       "@type": "@id"
     },
+    "usedEntityType": {
+      "@id": "rim:activity-type/usedEntityType",
+      "@type": "@id"
+    },
+    "generatedEntityType": {
+      "@id": "rim:activity-type/generatedEntityType",
+      "@type": "@id"
+    },
+    "associatedAgentType": {
+      "@id": "rim:activity-type/associatedAgentType",
+      "@type": "@id"
+    },
+    "informedByActivityType": {
+      "@id": "rim:activity-type/informedByActivityType",
+      "@type": "@id"
+    },
     "rim": "https://w3id.org/ogc/rim/",
     "prov": "http://www.w3.org/ns/prov#",
     "dct": "http://purl.org/dc/terms/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "acttype": "rim:activity-type/",
     "@version": 1.1
   }
 }

@@ -17,7 +17,7 @@ path	@id	schema
 /supersededBy	https://w3id.org/ogc/rim/supersededBy	https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/schema.yaml
 /supersedes	https://w3id.org/ogc/rim/supersedes	https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/schema.yaml
 /hasAction	https://w3id.org/ogc/rim/hasAction	https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/schema.yaml
-/usedEntityType		/github/workspace/build/annotated/register/activity-type/schema.yaml
-/generatedEntityType		/github/workspace/build/annotated/register/activity-type/schema.yaml
-/associatedAgentType		/github/workspace/build/annotated/register/activity-type/schema.yaml
-/informedByActivityType		/github/workspace/build/annotated/register/activity-type/schema.yaml
+/usedEntityType	https://w3id.org/ogc/rim/activity-type/usedEntityType	/github/workspace/build/annotated/register/activity-type/schema.yaml
+/generatedEntityType	https://w3id.org/ogc/rim/activity-type/generatedEntityType	/github/workspace/build/annotated/register/activity-type/schema.yaml
+/associatedAgentType	https://w3id.org/ogc/rim/activity-type/associatedAgentType	/github/workspace/build/annotated/register/activity-type/schema.yaml
+/informedByActivityType	https://w3id.org/ogc/rim/activity-type/informedByActivityType	/github/workspace/build/annotated/register/activity-type/schema.yaml

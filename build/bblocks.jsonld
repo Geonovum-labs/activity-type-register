@@ -213,7 +213,7 @@
   "name": "Building Blocks - Activity Type Register",
   "abstract": "A general-purpose, engine- and format-agnostic vocabulary of Generic Profiles, \nindependent of any one project. \nA Generic Profile gives one or more related operations an abstract I/O signature (named roles and abstract types, no format, no size limit)\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2026-10-28T18:31:59.639468",
+  "modified": "2026-10-30T07:54:10.248694",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"862052921203373f8136e6f464e0dfdd693e79f5",
@@ -328,7 +328,13 @@
         "plan"
       ],
       "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "dateOfLastChange": "2026-10-28",
+      "dateOfLastChange": "2026-10-30",
+      "ldContext": {
+        "prof:hasArtifact": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/activity-type/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "ontology": {
         "prof:hasArtifact": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/activity-type/ontology.ttl",
         "prof:hasRole": "role:specification",
@@ -350,12 +356,7 @@
         }
       ],
       "sourceSchema": "https://geonovum-labs.github.io/activity-type-register/_sources/activity-type/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/activity-type/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
+      "sourceLdContext": "https://geonovum-labs.github.io/activity-type-register/_sources/activity-type/context.jsonld",
       "resolvedSchemaProperties": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/activity-type/resolvedProperties.json",
       "sourceFiles": "https://geonovum-labs.github.io/activity-type-register/_sources/activity-type/",
       "validationPassed": true,
@@ -464,13 +465,7 @@
         "register"
       ],
       "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "dateOfLastChange": "2026-10-28",
-      "ldContext": {
-        "prof:hasArtifact": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
+      "dateOfLastChange": "2026-10-30",
       "ontology": {
         "prof:hasArtifact": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/ontology.ttl",
         "prof:hasRole": "role:specification",
@@ -492,7 +487,12 @@
         }
       ],
       "sourceSchema": "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/schema.yaml",
-      "sourceLdContext": "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/context.jsonld",
+      "ldContext": {
+        "prof:hasArtifact": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "resolvedSchemaProperties": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/resolvedProperties.json",
       "sourceFiles": "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/",
       "validationPassed": false,
@@ -624,7 +624,7 @@
         "activity type"
       ],
       "dateTimeAddition": "2026-09-17T00:00:00Z",
-      "dateOfLastChange": "2026-10-28",
+      "dateOfLastChange": "2026-10-30",
       "ontology": {
         "prof:hasArtifact": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/st-ml-activity-types/ontology.ttl",
         "prof:hasRole": "role:specification",

@@ -52,15 +52,14 @@
     "register"
   ],
   "dateTimeAddition": "2026-09-23T00:00:00Z",
-  "dateOfLastChange": "2026-10-28",
-  "ldContext": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/context.jsonld",
+  "dateOfLastChange": "2026-10-30",
   "ontology": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/ontology.ttl",
   "schema": {
     "application/yaml": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/schema.yaml",
     "application/json": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/schema.json"
   },
   "sourceSchema": "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/schema.yaml",
-  "sourceLdContext": "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/context.jsonld",
+  "ldContext": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/context.jsonld",
   "resolvedSchemaProperties": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/resolvedProperties.json",
   "sourceFiles": "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/",
   "validationPassed": false,
@@ -105,7 +104,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: Geoprocessing Activity Type\ndescription: 'A profile of the Activity Type Register Profile for geoprocessing activity\n  types\n\n  '\nallOf:\n- $ref: https://geonovum-labs.github.io/activity-type-register/build/annotated/register/activity-type/schema.yaml\nx-jsonld-extra-terms:\n  id: '@id'\n  type: '@type'\n  title: http://purl.org/dc/terms/title\n  description: http://purl.org/dc/terms/description\n  version: http://www.w3.org/2002/07/owl#versionInfo\n  usedEntityType:\n    x-jsonld-id: https://w3id.org/ogc/rim/activity-type/usedEntityType\n    x-jsonld-type: '@id'\n  generatedEntityType:\n    x-jsonld-id: https://w3id.org/ogc/rim/activity-type/generatedEntityType\n    x-jsonld-type: '@id'\n  associatedAgentType:\n    x-jsonld-id: https://w3id.org/ogc/rim/activity-type/associatedAgentType\n    x-jsonld-type: '@id'\n  informedByActivityType:\n    x-jsonld-id: https://w3id.org/ogc/rim/activity-type/informedByActivityType\n    x-jsonld-type: '@id'\nx-jsonld-prefixes:\n  dct: http://purl.org/dc/terms/\n  owl: http://www.w3.org/2002/07/owl#\n  acttype: https://w3id.org/ogc/rim/activity-type/\n  rim: https://w3id.org/ogc/rim#\nx-bblocks-metadata:\n  itemIdentifier: ogc.register.geoprocessing-activity-types\n  register: https://geonovum-labs.github.io/activity-type-register/build/register.json\n  version: '0.3'\n  dateOfLastChange: '2026-10-28'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: Geoprocessing Activity Type\ndescription: 'A profile of the Activity Type Register Profile for geoprocessing activity\n  types\n\n  '\nallOf:\n- $ref: https://geonovum-labs.github.io/activity-type-register/build/annotated/register/activity-type/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.register.geoprocessing-activity-types\n  register: https://geonovum-labs.github.io/activity-type-register/build/register.json\n  version: '0.3'\n  dateOfLastChange: '2026-10-30'\n",
   "gitRepository": "https://github.com/Geonovum-labs/activity-type-register",
   "gitPath": "_sources/geoprocessing-activity-types"
 }
