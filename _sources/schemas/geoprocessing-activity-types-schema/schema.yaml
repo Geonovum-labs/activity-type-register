@@ -4,4 +4,4 @@ description: >
   A profile of the Activity Type Register Profile for geoprocessing activity types
 
 allOf:
-  - $ref: bblocks://ogc.register.activity-type
+  - $ref: bblocks://ogc.register.schemas.activity-types-schema

@@ -1,0 +1,7 @@
+examples:
+  - title: "example Activity Type"
+    content: "A general activity type"
+    snippets:
+     -  language: json
+        ref: examples/activity.json
+               

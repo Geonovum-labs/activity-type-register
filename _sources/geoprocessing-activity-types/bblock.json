@@ -9,7 +9,7 @@
   "version": "0.3",
   "itemClass": "model",
   "isProfileOf": [
-    "bblocks://ogc.register.activity-type"
+    "bblocks://ogc.register.activity-types"
   ],
   "dependsOn": [
     "ogc.model.cross-domain.geosparql"

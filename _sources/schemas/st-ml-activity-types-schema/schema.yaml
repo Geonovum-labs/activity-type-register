@@ -4,4 +4,4 @@ description: >
   A profile of the Activity Type Register Profile for SpatioTemporal ML Activity Types
 
 allOf:
-  - $ref: bblocks://ogc.register.geoprocessing-activity-types
+  - $ref: bblocks://ogc.register.schemas.geoprocessing-activity-types-schema
