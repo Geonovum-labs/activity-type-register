@@ -1,0 +1,18 @@
+{
+  "@context": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/geoprocessing-activity-types-schema/context.jsonld",
+  "id": "Buffer",
+  "title": "Create a buffer around a polygon. ",
+  "description": "This service shall return a feature collection representing the buffer of geometry InputPolygon at distance BufferDistance. The buffer of a geometry at distance d is the Polygon or MultiPolygon which contains all points within a distance d of the geometry.",
+  "version": "2.0.0",
+  "type": "geoprocessing:buffer",
+  "itemClass": "rim:RegisterItemClass",
+  "objectIdentifier": "https://example.org/registers/geoprocessing/buffer/v1",
+  "validityStatus": "invalid",
+  "publicationStatus": "unpublished",
+  "inRegister": "https://example.org/registers/activity-types",
+  "realizes": "https://example.org/def/geoprocessing/buffer",
+  "usedEntityType": "point",
+  "generatedEntityType": "polygon",
+  "associatedAgentType": "Geoprocessing library ...",
+  "informedByActivityType": "none"
+}

@@ -1,0 +1,14 @@
+{
+  "@context": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/activity-types-schema/context.jsonld",
+  "id": "Activity",
+  "title": "Example of a generic processing activity ",
+  "description": "This activity is a general activity described with provenance information.",
+  "version": "2.0.0",
+  "type": "activity-type",
+  "itemClass": "rim:RegisterItemClass",
+  "objectIdentifier": "https://example.org/registers/activity/v1",
+  "validityStatus": "invalid",
+  "publicationStatus": "unpublished",
+  "inRegister": "https://example.org/registers/activity-types",
+  "realizes": "https://example.org/def/activity"
+}

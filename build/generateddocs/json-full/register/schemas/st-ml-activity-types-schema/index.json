@@ -1,0 +1,79 @@
+
+
+{
+  "itemIdentifier": "ogc.register.schemas.st-ml-activity-types-schema",
+  "name": "SpatioTemporal ML Activity Types Profile Schema",
+  "group": "Example: Activity Types",
+  "highlighted": true,
+  "title": "SpatioTemporal Machine learning training/inference activities, profiled from the Registered Item Model",
+  "abstract": "A profile of the SpatioTemporal Machine learning Activity Types Profile describing spatiotemporal machine learning training and inference runs, and registrable ML activity types, using the STAC MLM extension's task, framework/accelerator and input/output vocabulary.",
+  "description": "The STAC Machine Learning Model (MLM) extension describes a model as a static artifact \u2014 a STAC Item or Collection with declared inputs, outputs and requirements \u2014 but has no notion of a particular run of that model. This block adds that: mlact:MLActivityType (with mlact:TrainingActivityType and mlact:InferenceActivityType sub-types) is a geoproc:GeoprocessingActivityType recording one execution, and so can be specialised into ML activity types held in an activity type register. It is also a rim:RegisterAction. In this ecosystem, running a model is itself a governed act \u2014 typically the one that adds a derived product to a register as a new rim:RegisterItem \u2014 so the run belongs in the same audit trail as any other register action. The activity's task, framework and accelerator are drawn from the MLM extension's own SKOS schemes rather than redefined, and its recorded inputs/outputs (mlact:ActivityInput / mlact:ActivityOutput, both prov:Entity) each declare via dct:conformsTo which of the model's own declared mlm:ModelInput/mlm:ModelOutput specifications they realise. Registered ML activity types must declare at least one mlact:ActivityInput sub-type as a used entity type, and registered inference types at least one mlact:ActivityOutput sub-type as a generated entity type.",
+  "status": "under-development",
+  "version": "0.3",
+  "itemClass": "schema",
+  "isProfileOf": [
+    "ogc.register.schemas.geoprocessing-activity-types-schema"
+  ],
+  "dependsOn": [
+    "ogc.register.schemas.geoprocessing-activity-types-schema",
+    "ogc.register.st-ml-activity-types"
+  ],
+  "concept": [
+    "https://w3id.org/ogc/rim/ml-activity/STMLActivityType"
+  ],
+  "sources": [
+    {
+      "title": "STAC Machine Learning Model (MLM) Extension Ontology building block",
+      "link": "https://github.com/ogcincubator/bblocks-stac/tree/master/_sources/extensions/mlm-ontology"
+    },
+    {
+      "title": "STAC MLM extension README (field descriptions and example)",
+      "link": "https://github.com/stac-extensions/mlm/blob/main/README.md"
+    },
+    {
+      "title": "W3C PROV-O",
+      "link": "https://www.w3.org/TR/prov-o/"
+    }
+  ],
+  "tags": [
+    "machine learning",
+    "provenance",
+    "MLM",
+    "register",
+    "activity type"
+  ],
+  "dateTimeAddition": "2026-09-17T00:00:00Z",
+  "dateOfLastChange": "2026-10-30",
+  "shaclShapes": {
+    "ogc.register.geoprocessing-activity-types": [
+      "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl"
+    ],
+    "ogc.register.activity-types": [
+      "https://geonovum-labs.github.io/activity-type-register/_sources/activity-types/shapes.shacl"
+    ],
+    "ogc.model.cross-domain.prov": [
+      "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+    ],
+    "ogc.rim.core-ontology": [
+      "https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+    ],
+    "ogc.register.st-ml-activity-types": [
+      "https://geonovum-labs.github.io/activity-type-register/_sources/st-ml-activity-types/shapes.shacl"
+    ],
+    "ogc.contrib.stac.extensions.mlm-ontology": [
+      "https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl"
+    ]
+  },
+  "schema": {
+    "application/yaml": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/st-ml-activity-types-schema/schema.yaml",
+    "application/json": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/st-ml-activity-types-schema/schema.json"
+  },
+  "sourceSchema": "https://geonovum-labs.github.io/activity-type-register/_sources/schemas/st-ml-activity-types-schema/schema.yaml",
+  "ldContext": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/st-ml-activity-types-schema/context.jsonld",
+  "resolvedSchemaProperties": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/st-ml-activity-types-schema/resolvedProperties.json",
+  "sourceFiles": "https://geonovum-labs.github.io/activity-type-register/_sources/schemas/st-ml-activity-types-schema/",
+  "validationPassed": true,
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: SpatioTemporal ML Activity Types Profile\ndescription: 'A profile of the Activity Type Register Profile for SpatioTemporal ML\n  Activity Types\n\n  '\nallOf:\n- $ref: https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/geoprocessing-activity-types-schema/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.register.schemas.st-ml-activity-types-schema\n  register: https://geonovum-labs.github.io/activity-type-register/build/register.json\n  version: '0.3'\n  dateOfLastChange: '2026-10-30'\n",
+  "gitRepository": "https://github.com/Geonovum-labs/activity-type-register",
+  "gitPath": "_sources/schemas/st-ml-activity-types-schema"
+}

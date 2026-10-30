@@ -15,8 +15,7 @@
     "ogc.register.geoprocessing-activity-types"
   ],
   "dependsOn": [
-    "ogc.contrib.stac.extensions.mlm-ontology",
-    "ogc.register.geoprocessing-activity-types"
+    "ogc.contrib.stac.extensions.mlm-ontology"
   ],
   "concept": [
     "https://w3id.org/ogc/rim/ml-activity/STMLActivityType"
@@ -31,8 +30,8 @@
     "ogc.register.geoprocessing-activity-types": [
       "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl"
     ],
-    "ogc.register.activity-type": [
-      "https://geonovum-labs.github.io/activity-type-register/_sources/activity-type/shapes.shacl"
+    "ogc.register.activity-types": [
+      "https://geonovum-labs.github.io/activity-type-register/_sources/activity-types/shapes.shacl"
     ],
     "ogc.model.cross-domain.prov": [
       "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
@@ -65,13 +64,6 @@
   "dateTimeAddition": "2026-09-17T00:00:00Z",
   "dateOfLastChange": "2026-10-30",
   "ontology": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/st-ml-activity-types/ontology.ttl",
-  "schema": {
-    "application/yaml": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/st-ml-activity-types/schema.yaml",
-    "application/json": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/st-ml-activity-types/schema.json"
-  },
-  "sourceSchema": "https://geonovum-labs.github.io/activity-type-register/_sources/st-ml-activity-types/schema.yaml",
-  "ldContext": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/st-ml-activity-types/context.jsonld",
-  "resolvedSchemaProperties": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/st-ml-activity-types/resolvedProperties.json",
   "sourceFiles": "https://geonovum-labs.github.io/activity-type-register/_sources/st-ml-activity-types/",
   "validationPassed": true,
   "testOutputs": "https://github.com/Geonovum-labs/activity-type-register/blob/master/build/tests/register/st-ml-activity-types/",
@@ -146,7 +138,7 @@
     "owl": "http://www.w3.org/2002/07/owl#",
     "ex": "https://example.org/registers/ml-activities/"
   },
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: SpatioTemporal ML Activity Types Profile\ndescription: 'A profile of the Activity Type Register Profile for SpatioTemporal ML\n  Activity Types\n\n  '\nallOf:\n- $ref: https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.register.st-ml-activity-types\n  register: https://geonovum-labs.github.io/activity-type-register/build/register.json\n  version: '0.3'\n  dateOfLastChange: '2026-10-30'\n",
+  "annotatedSchema": null,
   "gitRepository": "https://github.com/Geonovum-labs/activity-type-register",
   "gitPath": "_sources/st-ml-activity-types"
 }

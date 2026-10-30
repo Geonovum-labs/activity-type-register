@@ -1,0 +1,15 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rim: <https://w3id.org/ogc/rim/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///github/workspace/Activity> a <file:///github/workspace/activity-type> ;
+    dct:description "This activity is a general activity described with provenance information." ;
+    dct:title "Example of a generic processing activity " ;
+    rim:inRegister <https://example.org/registers/activity-types> ;
+    rim:itemClass rim:RegisterItemClass ;
+    rim:objectIdentifier "https://example.org/registers/activity/v1"^^xsd:anyURI ;
+    rim:publicationStatus rim:unpublished ;
+    rim:realizes <https://example.org/def/activity> ;
+    rim:validityStatus rim:invalid ;
+    rim:version "2.0.0" .
+
