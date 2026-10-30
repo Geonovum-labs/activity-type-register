@@ -5,3 +5,10 @@ description: >
 
 allOf:
   - $ref: bblocks://ogc.register.schemas.activity-types-schema
+
+  - type: object
+    properties:
+      usedEntityType:
+        description: >
+          URI identifying a class of spatial objects used as input
+          by activities of this type.

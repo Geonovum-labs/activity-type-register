@@ -9,8 +9,9 @@ abstract: |
 
 # Description for this collection (optional)
 description: |
-  The description can be longer. Both **the abstract** *and the description* support Markdown,
-  including [links](https://google.es).
+  The profiles in this register are implemented as classes of the Registered Item Model, which lives in a separate [register](https://ogcincubator.github.io/registered-item-model/). 
+  The intent for this register is to be the genereric 'top level' register that federated registers can inherit from for specific activity profiles in the respective domains.
+
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
 identifier-prefix: ogc.register.
