@@ -5,6 +5,8 @@ Activity kinds may be anything, such as a quality review, a reprojection or a mo
 are that the activity types are _types_ not instances, of activity and that they are governed according to the
 [Register Item Model](https://github.com/ogcincubator/registered-item-model/).
 
+![](acttype.svg)
+
 ## What it adds
 
 - **`acttype:ActivityType`**: a subclass of `rim:RegisterItem`. Specific activity type classes
