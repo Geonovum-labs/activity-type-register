@@ -55,7 +55,7 @@ ex:predictedMask a mlact:ActivityOutput ;
     mlact:structure ex:landCoverResultStructure .
 
 ex:inference2026-09-01 a mlact:InferenceActivityType ;
-    rim:itemClass acttype:activityTypeItemClass ;
+    rim:itemClass acttype:ActivityTypeItemClass ;
     rim:objectIdentifier "https://example.org/registers/ml-activities/runs/inference2026-09-01"^^xsd:anyURI ;
     rim:validityStatus rim:valid ;
     rim:publicationStatus rim:published ;
@@ -106,7 +106,7 @@ ex:LandCoverSegmentation a acttype:ActivityType , owl:Class ;
     dct:title "Land cover segmentation" ;
     dct:description "Runs a semantic segmentation model over a multispectral scene to produce a per-pixel land cover mask." ;
     rim:inRegister ex:mlActivityTypeRegister ;
-    rim:itemClass acttype:activityTypeItemClass ;
+    rim:itemClass acttype:ActivityTypeItemClass ;
     rim:objectIdentifier "https://example.org/registers/ml-activities/types/land-cover-segmentation/v1"^^xsd:anyURI ;
     rim:validityStatus rim:valid ;
     rim:publicationStatus rim:published ;

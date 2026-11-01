@@ -16,7 +16,7 @@ ex:inference2026-09-01 a mlact:InferenceActivityType ;
     prov:startedAtTime "2026-09-01T10:00:00+00:00"^^xsd:dateTime ;
     rim:actionType rim:additionAction ;
     rim:appliesTo ex:predictedItem ;
-    rim:itemClass acttype:activityTypeItemClass ;
+    rim:itemClass acttype:ActivityTypeItemClass ;
     mlact:accelerator mlm:cuda ;
     mlact:framework "PyTorch" ;
     mlact:input ex:sceneChip ;

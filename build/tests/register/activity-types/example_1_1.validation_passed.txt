@@ -19,7 +19,7 @@ Validation result for _sources/activity-types/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/activity-types/shapes.shacl:
- - Shape acttype:ActivityTypeItemClassShape: acttype:activityTypeItemClass
+ - Shape acttype:ActivityTypeItemClassShape: acttype:ActivityTypeItemClass
  - Shape acttype:ActivityTypeShape: ex:DatasetQualityReview,ex:review-2026-09-20
 
 Validation result for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:

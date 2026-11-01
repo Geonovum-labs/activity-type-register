@@ -19,7 +19,7 @@ ex:eoProcessingRegister a rim:Register ;
               dct:title "NDVI computation" ;
               dct:description "Computes the Normalized Difference Vegetation Index from the red and near-infrared bands of a multispectral scene." ;
               rim:inRegister ex:eoProcessingRegister ;
-              rim:itemClass acttype:activityTypeItemClass ;
+              rim:itemClass acttype:ActivityTypeItemClass ;
               rim:objectIdentifier "https://example.org/registers/geoprocessing/ndvi-computation/v1"^^xsd:anyURI ;
               rim:validityStatus rim:valid ;
               rim:publicationStatus rim:published ;

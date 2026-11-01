@@ -10,8 +10,8 @@ are that the activity types are _types_ not instances, of activity and that they
 - **`acttype:ActivityType`**: a subclass of `rim:RegisterItem`. Specific activity type classes
   specialise this root. Registered types can be declared as classes and used to type individual
   activities. Those activities also inherit the register item requirements, so they need their
-  own identifiers, statuses and `acttype:activityTypeItemClass`.
-- **A narrowed `rim:itemClass` domain**: the register item class `acttype:activityTypeItemClass`,
+  own identifiers, statuses and `acttype:ActivityTypeItemClass`.
+- **A narrowed `rim:itemClass` domain**: the register item class `acttype:ActivityTypeItemClass`,
   plus SHACL in both directions. Every activity type record must use that item class and belong
   to the `acttype:ActivityType` hierarchy through its `rdf:type`. Every register item using that item class must be an
   `acttype:ActivityType`.

@@ -29,7 +29,7 @@ ex:DatasetQualityReview a acttype:ActivityType , owl:Class ;
     dct:title "Dataset quality review" ;
     dct:description "A review of a dataset against the curation quality criteria, producing a quality report." ;
     rim:inRegister ex:curationRegister ;
-    rim:itemClass acttype:activityTypeItemClass ;
+    rim:itemClass acttype:ActivityTypeItemClass ;
     rim:objectIdentifier "https://example.org/registers/activity-types/dataset-quality-review/v1"^^xsd:anyURI ;
     rim:validityStatus rim:valid ;
     rim:publicationStatus rim:published ;
@@ -60,7 +60,7 @@ ex:writeReport a p-plan:Step ;
 
 # An individual activity of the registered type.
 ex:review-2026-09-20 a ex:DatasetQualityReview ;
-    rim:itemClass acttype:activityTypeItemClass ;
+    rim:itemClass acttype:ActivityTypeItemClass ;
     rim:objectIdentifier "https://example.org/registers/activity-types/reviews/review-2026-09-20"^^xsd:anyURI ;
     rim:validityStatus rim:valid ;
     rim:publicationStatus rim:published ;

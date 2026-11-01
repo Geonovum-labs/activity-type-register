@@ -10,9 +10,9 @@
 # class) continues to apply. These shapes add the restriction that makes
 # the register an activity type register, in both directions:
 #
-#   - every acttype:ActivityType uses acttype:activityTypeItemClass as its
+#   - every acttype:ActivityType uses acttype:ActivityTypeItemClass as its
 #     rim:itemClass, and belongs to the acttype:ActivityType hierarchy;
-#   - every register item whose rim:itemClass is acttype:activityTypeItemClass
+#   - every register item whose rim:itemClass is acttype:ActivityTypeItemClass
 #     is an acttype:ActivityType (i.e. the domain of rim:itemClass, for this
 #     item class, is narrowed to types of acttype:ActivityType).
 #
@@ -25,8 +25,8 @@ acttype:ActivityTypeShape a sh:NodeShape ;
     sh:targetClass acttype:ActivityType ;
     sh:property [
         sh:path rim:itemClass ;
-        sh:hasValue acttype:activityTypeItemClass ;
-        sh:message "An activity type's rim:itemClass must be acttype:activityTypeItemClass." ;
+        sh:hasValue acttype:ActivityTypeItemClass ;
+        sh:message "An activity type's rim:itemClass must be acttype:ActivityTypeItemClass." ;
     ] ;
     sh:property [
         sh:path ( rdf:type [ sh:zeroOrMorePath rdfs:subClassOf ] ) ;
@@ -44,9 +44,9 @@ acttype:ActivityTypeShape a sh:NodeShape ;
     ] .
 
 acttype:ActivityTypeItemClassShape a sh:NodeShape ;
-    sh:targetNode acttype:activityTypeItemClass ;
+    sh:targetNode acttype:ActivityTypeItemClass ;
     sh:property [
         sh:path [ sh:inversePath rim:itemClass ] ;
         sh:class acttype:ActivityType ;
-        sh:message "Every register item of item class acttype:activityTypeItemClass must be an acttype:ActivityType." ;
+        sh:message "Every register item of item class acttype:ActivityTypeItemClass must be an acttype:ActivityType." ;
     ] .

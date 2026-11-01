@@ -73,7 +73,7 @@
                   "focusNodes": {
                     "acttype:ActivityTypeItemClassShape": {
                       "nodes": [
-                        "acttype:activityTypeItemClass"
+                        "acttype:ActivityTypeItemClass"
                       ]
                     },
                     "acttype:ActivityTypeShape": {
@@ -84,7 +84,7 @@
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:activityTypeItemClass\n - Shape acttype:ActivityTypeShape: ex:DatasetQualityReview,ex:review-2026-09-20\n"
+                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:ActivityTypeItemClass\n - Shape acttype:ActivityTypeShape: ex:DatasetQualityReview,ex:review-2026-09-20\n"
                 },
                 {
                   "op": "shacl-report",
@@ -431,7 +431,7 @@
                   "focusNodes": {
                     "acttype:ActivityTypeItemClassShape": {
                       "nodes": [
-                        "acttype:activityTypeItemClass"
+                        "acttype:ActivityTypeItemClass"
                       ]
                     },
                     "acttype:ActivityTypeShape": {
@@ -441,7 +441,7 @@
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:activityTypeItemClass\n - Shape acttype:ActivityTypeShape: ex:NdviComputation\n"
+                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:ActivityTypeItemClass\n - Shape acttype:ActivityTypeShape: ex:NdviComputation\n"
                 },
                 {
                   "op": "shacl-report",
@@ -956,7 +956,7 @@
                   "focusNodes": {
                     "acttype:ActivityTypeItemClassShape": {
                       "nodes": [
-                        "acttype:activityTypeItemClass"
+                        "acttype:ActivityTypeItemClass"
                       ]
                     },
                     "acttype:ActivityTypeShape": {
@@ -964,7 +964,7 @@
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:activityTypeItemClass\n - Shape acttype:ActivityTypeShape: *none*\n"
+                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:ActivityTypeItemClass\n - Shape acttype:ActivityTypeShape: *none*\n"
                 },
                 {
                   "op": "shacl-report",
@@ -1444,7 +1444,7 @@
                   "focusNodes": {
                     "acttype:ActivityTypeItemClassShape": {
                       "nodes": [
-                        "acttype:activityTypeItemClass"
+                        "acttype:ActivityTypeItemClass"
                       ]
                     },
                     "acttype:ActivityTypeShape": {
@@ -1454,7 +1454,7 @@
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:activityTypeItemClass\n - Shape acttype:ActivityTypeShape: ex:LandCoverSegmentation\n"
+                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:ActivityTypeItemClass\n - Shape acttype:ActivityTypeShape: ex:LandCoverSegmentation\n"
                 },
                 {
                   "op": "shacl-report",
@@ -1778,7 +1778,7 @@
                   "focusNodes": {
                     "acttype:ActivityTypeItemClassShape": {
                       "nodes": [
-                        "acttype:activityTypeItemClass"
+                        "acttype:ActivityTypeItemClass"
                       ]
                     },
                     "acttype:ActivityTypeShape": {
@@ -1786,7 +1786,7 @@
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:activityTypeItemClass\n - Shape acttype:ActivityTypeShape: *none*\n"
+                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:ActivityTypeItemClass\n - Shape acttype:ActivityTypeShape: *none*\n"
                 },
                 {
                   "op": "shacl-report",
@@ -2149,7 +2149,7 @@
                   "focusNodes": {
                     "acttype:ActivityTypeItemClassShape": {
                       "nodes": [
-                        "acttype:activityTypeItemClass"
+                        "acttype:ActivityTypeItemClass"
                       ]
                     },
                     "acttype:ActivityTypeShape": {
@@ -2157,7 +2157,7 @@
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:activityTypeItemClass\n - Shape acttype:ActivityTypeShape: *none*\n"
+                  "message": "Focus nodes for _sources/activity-types/shapes.shacl:\n - Shape acttype:ActivityTypeItemClassShape: acttype:ActivityTypeItemClass\n - Shape acttype:ActivityTypeShape: *none*\n"
                 },
                 {
                   "op": "shacl-report",

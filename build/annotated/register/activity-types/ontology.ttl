@@ -5,7 +5,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rim: <https://w3id.org/ogc/rim/> .
 
-acttype:activityTypeItemClass a rim:RegisterItemClass ;
+acttype:ActivityTypeItemClass a rim:RegisterItemClass ;
     dct:description "The register item class of every item in an activity type register. Items of this class must be acttype:ActivityType instances, directly or through a sub-class." ;
     dct:title "Activity type" ;
     rdfs:isDefinedBy acttype: ;

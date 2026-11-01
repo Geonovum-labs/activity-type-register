@@ -21,7 +21,7 @@ ex:NdviComputation a owl:Class,
     acttype:plan ex:ndviPlan ;
     acttype:usedEntityType ex:MultispectralScene ;
     rim:inRegister ex:eoProcessingRegister ;
-    rim:itemClass acttype:activityTypeItemClass ;
+    rim:itemClass acttype:ActivityTypeItemClass ;
     rim:objectIdentifier "https://example.org/registers/geoprocessing/ndvi-computation/v1"^^xsd:anyURI ;
     rim:publicationStatus rim:published ;
     rim:validityStatus rim:valid .

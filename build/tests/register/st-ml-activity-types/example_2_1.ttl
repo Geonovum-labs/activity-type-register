@@ -20,7 +20,7 @@ ex:LandCoverSegmentation a owl:Class,
     acttype:plan ex:landCoverSegmentationPlan ;
     acttype:usedEntityType mlact:ActivityInput ;
     rim:inRegister ex:mlActivityTypeRegister ;
-    rim:itemClass acttype:activityTypeItemClass ;
+    rim:itemClass acttype:ActivityTypeItemClass ;
     rim:objectIdentifier "https://example.org/registers/ml-activities/types/land-cover-segmentation/v1"^^xsd:anyURI ;
     rim:publicationStatus rim:published ;
     rim:validityStatus rim:valid .
