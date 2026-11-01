@@ -1,8 +1,9 @@
 # Activity Type Register Profile
 
-A profile of the [Registered Item Model](../core-ontology) for registers whose items are **registered activity types**: kinds of activity such as a quality review, a reprojection or a model
-inference run, governed with the same identifiers, statuses and change history as any other
-register item.
+A profile of the [Registered Item Model](../core-ontology) for registers whose items are **activity types**: kinds of activity.
+Activity kinds may be anything, such as a quality review, a reprojection or a model inference run. The important things
+are that the activity types are _types_ not instances, of activity and that they are governed according to the
+[Register Item Model](https://github.com/ogcincubator/registered-item-model/).
 
 ## What it adds
 
