@@ -22,7 +22,7 @@ identifier-prefix: ogc.register.
 # a full register.json URL.
 imports:
   - default
-  - https://geonovum-labs.github.io/registered-item-model/build/register.json
+  - https://ogcincubator.github.io/registered-item-model/build/register.json
 
 # Meta-registry used to resolve "@org/register" import aliases above (optional).
 # Defaults to the postprocessor's built-in meta-registry if omitted; set to null to disable
