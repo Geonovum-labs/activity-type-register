@@ -43,7 +43,7 @@
     "activity type"
   ],
   "dateTimeAddition": "2026-09-17T00:00:00Z",
-  "dateOfLastChange": "2026-10-30",
+  "dateOfLastChange": "2026-11-04",
   "shaclShapes": {
     "ogc.register.geoprocessing-activity-types": [
       "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl"
@@ -55,7 +55,7 @@
       "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
     ],
     "ogc.rim.core-ontology": [
-      "https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+      "https://ogcincubator.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
     ],
     "ogc.register.st-ml-activity-types": [
       "https://geonovum-labs.github.io/activity-type-register/_sources/st-ml-activity-types/shapes.shacl"
@@ -73,7 +73,7 @@
   "resolvedSchemaProperties": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/st-ml-activity-types-schema/resolvedProperties.json",
   "sourceFiles": "https://geonovum-labs.github.io/activity-type-register/_sources/schemas/st-ml-activity-types-schema/",
   "validationPassed": true,
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: SpatioTemporal ML Activity Types Profile\ndescription: 'A profile of the Activity Type Register Profile for SpatioTemporal ML\n  Activity Types\n\n  '\nallOf:\n- $ref: https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/geoprocessing-activity-types-schema/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.register.schemas.st-ml-activity-types-schema\n  register: https://geonovum-labs.github.io/activity-type-register/build/register.json\n  version: '0.3'\n  dateOfLastChange: '2026-10-30'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: SpatioTemporal ML Activity Types Profile\ndescription: 'A profile of the Activity Type Register Profile for SpatioTemporal ML\n  Activity Types\n\n  '\nallOf:\n- $ref: https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/geoprocessing-activity-types-schema/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.register.schemas.st-ml-activity-types-schema\n  register: https://geonovum-labs.github.io/activity-type-register/build/register.json\n  version: '0.3'\n  dateOfLastChange: '2026-11-04'\n",
   "gitRepository": "https://github.com/Geonovum-labs/activity-type-register",
   "gitPath": "_sources/schemas/st-ml-activity-types-schema"
 }

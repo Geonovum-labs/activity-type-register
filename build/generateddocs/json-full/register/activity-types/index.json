@@ -28,7 +28,7 @@
       "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
     ],
     "ogc.rim.core-ontology": [
-      "https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+      "https://ogcincubator.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
     ]
   },
   "sources": [
@@ -48,7 +48,7 @@
     "plan"
   ],
   "dateTimeAddition": "2026-09-23T00:00:00Z",
-  "dateOfLastChange": "2026-10-30",
+  "dateOfLastChange": "2026-11-04",
   "ontology": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/activity-types/ontology.ttl",
   "sourceFiles": "https://geonovum-labs.github.io/activity-type-register/_sources/activity-types/",
   "validationPassed": true,

@@ -38,7 +38,7 @@
     "register"
   ],
   "dateTimeAddition": "2026-09-23T00:00:00Z",
-  "dateOfLastChange": "2026-10-30",
+  "dateOfLastChange": "2026-11-04",
   "shaclShapes": {
     "ogc.register.geoprocessing-activity-types": [
       "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl"
@@ -50,7 +50,7 @@
       "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
     ],
     "ogc.rim.core-ontology": [
-      "https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+      "https://ogcincubator.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
     ]
   },
   "schema": {
@@ -90,7 +90,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: Geoprocessing Activity Type\ndescription: 'A profile of the Activity Type Register Profile for geoprocessing activity\n  types\n\n  '\nallOf:\n- $ref: https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/activity-types-schema/schema.yaml\n- type: object\n  properties:\n    usedEntityType:\n      description: URI identifying a class of spatial objects used as input by activities\n        of this type.\nx-bblocks-metadata:\n  itemIdentifier: ogc.register.schemas.geoprocessing-activity-types-schema\n  register: https://geonovum-labs.github.io/activity-type-register/build/register.json\n  version: '0.3'\n  dateOfLastChange: '2026-10-30'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: Geoprocessing Activity Type\ndescription: 'A profile of the Activity Type Register Profile for geoprocessing activity\n  types\n\n  '\nallOf:\n- $ref: https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/activity-types-schema/schema.yaml\n- type: object\n  properties:\n    usedEntityType:\n      description: URI identifying a class of spatial objects used as input by activities\n        of this type.\nx-bblocks-metadata:\n  itemIdentifier: ogc.register.schemas.geoprocessing-activity-types-schema\n  register: https://geonovum-labs.github.io/activity-type-register/build/register.json\n  version: '0.3'\n  dateOfLastChange: '2026-11-04'\n",
   "gitRepository": "https://github.com/Geonovum-labs/activity-type-register",
   "gitPath": "_sources/schemas/geoprocessing-activity-types-schema"
 }

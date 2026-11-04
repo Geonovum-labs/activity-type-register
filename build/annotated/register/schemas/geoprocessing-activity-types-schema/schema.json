@@ -19,6 +19,6 @@
     "itemIdentifier": "ogc.register.schemas.geoprocessing-activity-types-schema",
     "register": "https://geonovum-labs.github.io/activity-type-register/build/register.json",
     "version": "0.3",
-    "dateOfLastChange": "2026-10-30"
+    "dateOfLastChange": "2026-11-04"
   }
 }

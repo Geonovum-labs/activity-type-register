@@ -75,7 +75,7 @@ description: 'A registered activity type based on the Registered Item Model.
 
   '
 allOf:
-- $ref: https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/schema.yaml
+- $ref: https://ogcincubator.github.io/registered-item-model/build/annotated/rim/schemas/register-item/schema.yaml
 - type: object
   properties:
     usedEntityType:
@@ -124,7 +124,7 @@ x-bblocks-metadata:
   itemIdentifier: ogc.register.schemas.activity-types-schema
   register: https://geonovum-labs.github.io/activity-type-register/build/register.json
   version: '0.3'
-  dateOfLastChange: '2026-10-30'
+  dateOfLastChange: '2026-11-04'
 
 ```
 

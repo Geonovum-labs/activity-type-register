@@ -3,12 +3,12 @@
   "name": "Activity Type Register",
   "abstract": "A general-purpose, engine- and format-agnostic vocabulary of Generic Profiles, \nindependent of any one project. \nA Generic Profile gives one or more related operations an abstract I/O signature (named roles and abstract types, no format, no size limit)\n",
   "description": "The profiles in this register are implemented as classes of the Registered Item Model, which lives in a separate [register](https://ogcincubator.github.io/registered-item-model/). \nThe intent for this register is to be the genereric 'top level' register that federated registers can inherit from for specific activity profiles in the respective domains.\n",
-  "modified": "2026-10-30T10:33:51.772938",
+  "modified": "2026-11-04T09:15:22.969592",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"862052921203373f8136e6f464e0dfdd693e79f5",
-      "shortCommitId": "\"862052",
-      "date": "2026-10-26T21:53:11+00:00\""
+      "commitId": "\"373c26d1cdf143759ae2c602c0713e98e6af6fc9",
+      "shortCommitId": "\"373c26",
+      "date": "2026-11-03T13:31:34+00:00\""
     }
   },
   "gitRepository": "https://github.com/Geonovum-labs/activity-type-register",
@@ -19,7 +19,7 @@
   "validationReportJson": "https://geonovum-labs.github.io/activity-type-register/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json",
-    "https://geonovum-labs.github.io/registered-item-model/build/register.json"
+    "https://ogcincubator.github.io/registered-item-model/build/register.json"
   ],
   "bblocks": [
     {
@@ -50,7 +50,7 @@
           "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
         ],
         "ogc.rim.core-ontology": [
-          "https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+          "https://ogcincubator.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
         ]
       },
       "sources": [
@@ -70,7 +70,7 @@
         "plan"
       ],
       "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "dateOfLastChange": "2026-10-30",
+      "dateOfLastChange": "2026-11-04",
       "ontology": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/activity-types/ontology.ttl",
       "sourceFiles": "https://geonovum-labs.github.io/activity-type-register/_sources/activity-types/",
       "validationPassed": true,
@@ -121,7 +121,7 @@
           "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
         ],
         "ogc.rim.core-ontology": [
-          "https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+          "https://ogcincubator.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
         ]
       },
       "sources": [
@@ -141,7 +141,7 @@
         "register"
       ],
       "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "dateOfLastChange": "2026-10-30",
+      "dateOfLastChange": "2026-11-04",
       "ontology": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/geoprocessing-activity-types/ontology.ttl",
       "sourceFiles": "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/",
       "validationPassed": true,
@@ -198,7 +198,7 @@
           "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
         ],
         "ogc.rim.core-ontology": [
-          "https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+          "https://ogcincubator.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
         ]
       },
       "sources": [
@@ -223,7 +223,7 @@
         "activity type"
       ],
       "dateTimeAddition": "2026-09-17T00:00:00Z",
-      "dateOfLastChange": "2026-10-30",
+      "dateOfLastChange": "2026-11-04",
       "ontology": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/st-ml-activity-types/ontology.ttl",
       "sourceFiles": "https://geonovum-labs.github.io/activity-type-register/_sources/st-ml-activity-types/",
       "validationPassed": true,
@@ -283,7 +283,7 @@
         "schema"
       ],
       "dateTimeAddition": "2026-10-30T00:00:00Z",
-      "dateOfLastChange": "2026-10-30",
+      "dateOfLastChange": "2026-11-04",
       "shaclShapes": {
         "ogc.register.activity-types": [
           "https://geonovum-labs.github.io/activity-type-register/_sources/activity-types/shapes.shacl"
@@ -292,7 +292,7 @@
           "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
         ],
         "ogc.rim.core-ontology": [
-          "https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+          "https://ogcincubator.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
         ]
       },
       "ldContext": "https://geonovum-labs.github.io/activity-type-register/build/annotated/register/schemas/activity-types-schema/context.jsonld",
@@ -359,7 +359,7 @@
         "register"
       ],
       "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "dateOfLastChange": "2026-10-30",
+      "dateOfLastChange": "2026-11-04",
       "shaclShapes": {
         "ogc.register.geoprocessing-activity-types": [
           "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl"
@@ -371,7 +371,7 @@
           "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
         ],
         "ogc.rim.core-ontology": [
-          "https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+          "https://ogcincubator.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
         ]
       },
       "schema": {
@@ -442,7 +442,7 @@
         "activity type"
       ],
       "dateTimeAddition": "2026-09-17T00:00:00Z",
-      "dateOfLastChange": "2026-10-30",
+      "dateOfLastChange": "2026-11-04",
       "shaclShapes": {
         "ogc.register.geoprocessing-activity-types": [
           "https://geonovum-labs.github.io/activity-type-register/_sources/geoprocessing-activity-types/shapes.shacl"
@@ -454,7 +454,7 @@
           "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
         ],
         "ogc.rim.core-ontology": [
-          "https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+          "https://ogcincubator.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
         ],
         "ogc.register.st-ml-activity-types": [
           "https://geonovum-labs.github.io/activity-type-register/_sources/st-ml-activity-types/shapes.shacl"
