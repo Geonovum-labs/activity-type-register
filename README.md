@@ -1,3 +1,5 @@
+# Note this repo is now archived. The active version is the one on ogcincubator: https://ogcincubator.github.io/activity-type-register/
+
 # OGC Building Block template
 
 This template provides a working example of an [OGC Building Block](https://opengeospatial.github.io/bblocks/register/). For more info see [the Documentation](https://ogcincubator.github.io/bblocks-docs/).
